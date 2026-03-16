@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+*.js.map
+
+# Environment and secrets
+.env
+*.env
+.DS_Store
+key.txt
+*.key
+*.pem
+*.token
+
+# Editor
+.vscode/
+.idea/
+
+# OS
+Thumbs.db

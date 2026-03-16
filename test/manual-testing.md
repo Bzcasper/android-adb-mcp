@@ -20,10 +20,28 @@ Since setting up a full Android emulator requires multi-GB downloads, here are a
    node test/manual-test.mjs
    ```
 
-## Option 2: Use a Cloud Android Device
+## Option 2: Use Genymotion Cloud (Recommended)
 
-Several services offer Android devices in the cloud:
-- [Genymotion Cloud](https://www.genymotion.com/cloud/)
+Genymotion Cloud provides Android devices in the cloud. Setup is automated:
+
+### Automated Setup
+```bash
+# Using the provided API key (replace with your actual key)
+export GENYMOTION_API_KEY="your_api_key_here"
+npm run setup:genymotion -- --apiKey "$GENYMOTION_API_KEY"
+```
+
+### Manual Setup
+1. Get API key from [Genymotion Cloud API](https://www.genymotion.com/enterprise/api/)
+2. Set environment variable: `export GENYMOTION_API_KEY="your_key"`
+3. Run: `npm run setup:genymotion`
+4. The script will:
+   - Create a Genymotion Cloud device
+   - Start the device
+   - Connect ADB to it
+   - Test the MCP server
+
+### Other Cloud Services
 - [BrowserStack App Live](https://www.browserstack.com/app-automate)
 - [AWS Device Farm](https://aws.amazon.com/device-farm/)
 

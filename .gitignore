@@ -13,6 +13,7 @@ key.txt
 *.key
 *.pem
 *.token
+scripts/.env*
 
 # Editor
 .vscode/

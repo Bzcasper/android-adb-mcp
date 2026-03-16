@@ -1,10 +1,12 @@
 {
   "name": "android-adb-mcp",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "MCP server giving AI agents (Claude Code, Goose) control over Android devices via ADB — screen capture, UI automation, app launch, file transfer",
   "type": "module",
   "main": "dist/index.js",
-  "bin": { "android-adb-mcp": "dist/index.js" },
+  "bin": {
+    "android-adb-mcp": "dist/index.js"
+  },
   "scripts": {
     "build": "tsc",
     "start": "node dist/index.js",
@@ -13,9 +15,16 @@
     "setup:genymotion": "node scripts/setup-genymotion.js"
   },
   "keywords": [
-    "mcp", "android", "adb", "claude", "goose",
-    "automation", "model-context-protocol",
-    "claude-code", "mobile-automation", "ai-agent"
+    "mcp",
+    "android",
+    "adb",
+    "claude",
+    "goose",
+    "automation",
+    "model-context-protocol",
+    "claude-code",
+    "mobile-automation",
+    "ai-agent"
   ],
   "author": "Bobby Casper <robertmcasper@gmail.com>",
   "license": "Apache-2.0",
@@ -24,7 +33,9 @@
     "url": "https://github.com/Bzcasper/android-adb-mcp.git"
   },
   "homepage": "https://github.com/Bzcasper/android-adb-mcp#readme",
-  "bugs": { "url": "https://github.com/Bzcasper/android-adb-mcp/issues" },
+  "bugs": {
+    "url": "https://github.com/Bzcasper/android-adb-mcp/issues"
+  },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.27.1",
     "zod": "^3.24.2"
@@ -33,6 +44,12 @@
     "@types/node": "^22.15.3",
     "typescript": "^5.8.3"
   },
-  "engines": { "node": ">=18.0.0" },
-  "files": ["dist", "README.md", "LICENSE"]
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ]
 }
